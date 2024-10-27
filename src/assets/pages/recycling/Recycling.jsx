@@ -3,6 +3,8 @@ import TrashCan from "./models-3D/TrashCan"; // Importa el componente TrashCan q
 import { Canvas } from "@react-three/fiber"; // Importa el componente Canvas que sirve como contenedor para renderizar el contenido 3D
 import { OrbitControls, useGLTF } from "@react-three/drei"; // Importa OrbitControls para permitir el control del modelo con el ratón y useGLTF para cargar modelos GLTF
 import "./Recycling.css"; // Importa los estilos para el componente desde Recycling.css
+import City from "../earth/improper-waste-management/modelo3d/escena/City";
+import City3d from "../earth/improper-waste-management/modelo3d/modelo3D/City3d";
 
 // Definición del componente funcional RecyCling
 const RecyCling = () => {
@@ -33,6 +35,7 @@ const RecyCling = () => {
           
           {/* Renderiza el modelo TrashCan, que contiene el modelo 3D */}
           <TrashCan />
+          <City3d/>
         </Canvas>
       </div>
     </>

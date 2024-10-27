@@ -8,7 +8,6 @@ import Home from "./assets/pages/home/Home.jsx";
 import RecyCling from "./assets/pages/recycling/Recycling.jsx";
 import Page404 from "./assets/pages/page-404/Page404.jsx";
 import Erosion from "./assets/pages/earth/soil-erosion/erosion.jsx";
-import Management from "./assets/pages/earth/improper-waste-management/management.jsx";
 import Map from "./assets/pages/map/map.jsx";
 
 const router = createBrowserRouter([
@@ -19,7 +18,6 @@ const router = createBrowserRouter([
   {path: "/soil-erosion", element: <Erosion/>},
   { path: "/recycling", element: <RecyCling /> },
   { path: "*", element: <Page404 /> },
-  { path: "/management", element: <Management /> },
   { path: "/map", element: <Map /> },
 ]);
 createRoot(document.getElementById('root')).render(
