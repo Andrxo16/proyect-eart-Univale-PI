@@ -1,16 +1,19 @@
-
 nav {
   background-color: #D9D9D9;
   overflow: hidden;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 nav ul {
   list-style-type: none;
+  display: flex; /* Cambia a flexbox */
+  align-items: center; /* Alinea los elementos verticalmente */
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  float: left;
+  float: none; /* Elimina el float */
 }
 
 nav ul li a {
@@ -26,9 +29,9 @@ nav ul li a:hover {
   color: black;
 }
 
-/* Estilos para las secciones */  
-section {
-  padding: 60px 20px;
+/* Estilos para el contenedor del perfil */
+#perfil {
+  margin-left: 70%; /* Empuja el perfil al lado derecho */
 }
 
 .dropdown-content {
