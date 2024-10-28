@@ -18,6 +18,8 @@ const Header = () => {
               <div className="dropdown-content">
                 <Link to="/soil-erosion">Erosión</Link>
                 <Link to="/management">Residuos</Link>
+                <Link to="/Deforestation">Desforestacion</Link>
+                <Link to="/biodiversity">Perdida de la Biodiversidad</Link>
               </div>
             </li>
             <li>
