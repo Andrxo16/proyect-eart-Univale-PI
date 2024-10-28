@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <h1>Bienvenidos al Estado de Tierra</h1>
+      <h1>Bienvenidos a Land World</h1>
       <div className="containerhome">
         <Earth3d className="container-3d-tierra" />
         <div className="container-home">

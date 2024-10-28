@@ -1,12 +1,16 @@
 import Header from "../../../../components/Header/Header";
 import "./erosion.css";
+import Background from "./prueba/Background";
 
 const Erosion = () => {
     return (
         <>
             <Header />
+
             <div className="home-erosion">
+
                 <h1 className="tituloPrincipal">Erosión del Suelo: Un Problema Global</h1>
+                <Background/>
 
                 <div className="seccion">
                     <h3 className="tituloSeccion">¿Cómo se produce la erosión del suelo?</h3>
@@ -40,6 +44,13 @@ const Erosion = () => {
 
                 <div className="conclusion">
                     <p>La erosión del suelo es un problema grave que afecta a la salud de nuestro planeta. Es importante tomar medidas para prevenir la erosión del suelo y proteger nuestros recursos naturales.</p>
+                </div>
+            </div>
+            <div className="background">
+                <div className="bubbles">
+                    {[...Array(20)].map((_, i) => (
+                        <div key={i} className="bubble"></div>
+                    ))}
                 </div>
             </div>
         </>

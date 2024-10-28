@@ -1,5 +1,5 @@
 nav {
-  background-color: #D9D9D9;
+  background-color: #A6998A;
   overflow: hidden;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -25,13 +25,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #A6998A;
-  color: black;
+  background-color: #8C695D;
+  color: rgb(255, 255, 255);
 }
 
 /* Estilos para el contenedor del perfil */
 #perfil {
-  margin-left: 70%; /* Empuja el perfil al lado derecho */
+  margin-left: 60%; /* Empuja el perfil al lado derecho */
 }
 
 .dropdown-content {
@@ -53,6 +53,7 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
+  color: rgb(0, 0, 0);
 }
 
 /* Mostrar el contenido del menú desplegable al pasar el cursor */

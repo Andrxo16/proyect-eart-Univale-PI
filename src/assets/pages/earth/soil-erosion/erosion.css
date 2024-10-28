@@ -1,76 +1,87 @@
-/* Estilos generales para la sección de erosión en la página de inicio */
-.home-erosion {
-    color: #000000; /* Color de texto negro */
-    max-width: 0; /* Ancho máximo de 1200px para la sección */
-    padding: 0; /* Espaciado interno de 20px */
-    background-color: #fff; /* Color de fondo blanco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la sección */
-    border-radius: 10px; /* Bordes redondeados con un radio de 10px */
+/* Estilos generales */
+
+/* Contenedor del fondo */
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilos para el título principal */
-.tituloPrincipal {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin-top: 2rem; /* Margen superior de 2rem */
-    color: #2196F3; /* Color azul claro para el título */
-    /* Azul claro */
-    animation: tituloPrincipalAnimacion 1s ease-in-out; /* Aplica animación al título */
+/* Contenedor de burbujas */
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
-/* Estilos para los títulos de sección */
-.tituloSeccion {
-    margin-top: 1.5rem; /* Margen superior de 1.5rem */
-    color: #333; /* Color gris oscuro para el texto */
+/* Estilo de burbujas */
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: rise 20s infinite;
 }
 
-/* Estilos para los elementos de la lista */
-.elementoLista {
-    margin-bottom: 0.5rem; /* Margen inferior de 0.5rem */
-    transition: transform 0.2s ease-in-out; /* Transición suave para transformaciones */
+/* Diferentes tamaños de burbujas */
+.bubble:nth-child(odd) {
+    width: 60px;
+    height: 60px;
+    animation-duration: 25s;
 }
 
-/* Estilos para el contenido principal */
-.container {
-    max-width: 800px; /* Ancho máximo de 800px para el contenedor */
-    margin: 2rem auto; /* Margen superior de 2rem y centrado horizontalmente */
-    padding: 2rem; /* Espaciado interno de 2rem */
-    background-color: #fff; /* Color de fondo blanco */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
-    border-radius: 5px; /* Bordes redondeados con un radio de 5px */
-    transition: box-shadow 0.2s ease-in-out; /* Transición suave para la sombra */
+.bubble:nth-child(even) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 15s;
 }
 
-/* Estilos para las secciones que contienen información */
-.seccion {
-    margin-bottom: 2rem; /* Margen inferior de 2rem para separación */
-}
-
-/* Estilos para los elementos de la lista al pasar el ratón */
-.elementoLista:hover {
-    transform: translateX(5px); /* Desplaza el elemento 5px a la derecha al pasar el ratón */
-}
-
-/* Estilos para la conclusión */
-.conclusion {
-    text-align: center; /* Centra el texto horizontalmente */
-    font-style: italic; /* Aplica estilo itálico al texto */
-    margin-top: 2rem; /* Margen superior de 2rem */
-}
-
-/* Interactividad del contenedor al pasar el ratón */
-.container:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el ratón */
-}
-
-/* Animación para el título principal */
-@keyframes tituloPrincipalAnimacion {
+/* Animación de burbujas */
+@keyframes rise {
     0% {
-        opacity: 0; /* Inicia con opacidad 0 (invisible) */
-        transform: translateY(20px); /* Inicia desplazado 20px hacia abajo */
+        transform: translateY(100vh) translateX(0);
+        opacity: 0;
     }
-
+    50% {
+        opacity: 0.6;
+    }
     100% {
-        opacity: 1; /* Termina con opacidad 1 (visible) */
-        transform: translateY(0); /* Termina en su posición original */
+        transform: translateY(-10vh) translateX(30vw);
+        opacity: 0;
     }
 }
+
+/* Posición aleatoria de burbujas */
+.bubble {
+    left: calc(100% * var(--i) / 20);
+    --i: 1;
+}
+.bubble:nth-child(2) { --i: 2; }
+.bubble:nth-child(3) { --i: 3; }
+.bubble:nth-child(4) { --i: 4; }
+.bubble:nth-child(5) { --i: 5; }
+.bubble:nth-child(6) { --i: 6; }
+.bubble:nth-child(7) { --i: 7; }
+.bubble:nth-child(8) { --i: 8; }
+.bubble:nth-child(9) { --i: 9; }
+.bubble:nth-child(10) { --i: 10; }
+.bubble:nth-child(11) { --i: 11; }
+.bubble:nth-child(12) { --i: 12; }
+.bubble:nth-child(13) { --i: 13; }
+.bubble:nth-child(14) { --i: 14; }
+.bubble:nth-child(15) { --i: 15; }
+.bubble:nth-child(16) { --i: 16; }
+.bubble:nth-child(17) { --i: 17; }
+.bubble:nth-child(18) { --i: 18; }
+.bubble:nth-child(19) { --i: 19; }
+.bubble:nth-child(20) { --i: 20; }
