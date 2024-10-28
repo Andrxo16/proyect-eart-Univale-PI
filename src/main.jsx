@@ -8,10 +8,8 @@ import Home from "./assets/pages/home/Home.jsx";
 import RecyCling from "./assets/pages/recycling/Recycling.jsx";
 import Page404 from "./assets/pages/page-404/Page404.jsx";
 import Erosion from "./assets/pages/earth/soil-erosion/erosion.jsx";
+import Management from "./assets/pages/earth/improper-waste-management/management.jsx";
 import Map from "./assets/pages/map/map.jsx";
-import Fondo from "./assets/pages/earth/soil-erosion/prueba/Fondo.jsx";
-
-
 
 const router = createBrowserRouter([
   { path: "/", element: <Navigate to="/login" replace /> },
@@ -19,10 +17,10 @@ const router = createBrowserRouter([
   { path: "/Quiz", element: <Quiz />,},
   { path: "/home", element: <Home /> },
   {path: "/soil-erosion", element: <Erosion/>},
+  {path: "/management", element: <Management/>},
   { path: "/recycling", element: <RecyCling /> },
   { path: "*", element: <Page404 /> },
   { path: "/map", element: <Map /> },
-  { path: "/Fondo", element: <Fondo /> },
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>

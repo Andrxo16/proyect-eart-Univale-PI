@@ -1,4 +1,3 @@
-// Importamos los estilos asociados al componente desde un archivo CSS
 import "./Login.css";
 
 // Importamos los hooks de React que se utilizan para manejar funciones y efectos secundarios
@@ -19,33 +18,33 @@ import Header from "../../../components/Header/Header";
 // Importamos React para la definición de componentes funcionales
 import React from "react";
 
-// Definimos el componente funcional `Login`, que será exportado para ser usado en otras partes de la aplicación
+// Definimos el componente funcional Login, que será exportado para ser usado en otras partes de la aplicación
 export default function Login() {
-    // Usamos el hook `useAuthStore` para obtener el estado del usuario y las funciones relacionadas con la autenticación
+    // Usamos el hook useAuthStore para obtener el estado del usuario y las funciones relacionadas con la autenticación
     const { user, loginGoogleWithPopUp, observeAuthState, logout } = useAuthStore();
 
-    // Usamos `useNavigate` para obtener una función que permite navegar a diferentes rutas
+    // Usamos useNavigate para obtener una función que permite navegar a diferentes rutas
     const navigate = useNavigate();
 
     // Obtenemos el estado del quiz, si existe, desde el store de autenticación
     const { quiz } = useAuthStore();
     console.log(quiz); // Registramos el estado del quiz en la consola para propósitos de depuración
 
-    // Definimos la función `handleLogin` que maneja el inicio de sesión con Google mediante un popup
+    // Definimos la función handleLogin que maneja el inicio de sesión con Google mediante un popup
     const handleLogin = useCallback(() => {
         loginGoogleWithPopUp(); // Llamamos la función que abre el popup de inicio de sesión con Google
-    }, [loginGoogleWithPopUp]); // Utilizamos `useCallback` para optimizar el rendimiento, evitando recrear la función innecesariamente
+    }, [loginGoogleWithPopUp]); // Utilizamos useCallback para optimizar el rendimiento, evitando recrear la función innecesariamente
 
-    // Definimos la función `handleLogout` que maneja el cierre de sesión del usuario
+    // Definimos la función handleLogout que maneja el cierre de sesión del usuario
     const handleLogout = useCallback(() => {
         logout(); // Llamamos la función que cierra la sesión del usuario
-    }, [logout]); // Utilizamos `useCallback` para optimizar el rendimiento
+    }, [logout]); // Utilizamos useCallback para optimizar el rendimiento
 
-    // Hook de efecto que se ejecuta cada vez que el componente se monta o cambia el estado de `user`
+    // Hook de efecto que se ejecuta cada vez que el componente se monta o cambia el estado de user
     useEffect(() => {
         observeAuthState(); // Observamos el estado de autenticación y actualizamos si hay algún cambio en el usuario
         console.log(user); // Registramos el estado actual del usuario en la consola para propósitos de depuración
-    }, [observeAuthState, user]); // Dependencias: ejecutamos el efecto cuando `observeAuthState` o `user` cambian
+    }, [observeAuthState, user]); // Dependencias: ejecutamos el efecto cuando observeAuthState o user cambian
 
     // Hook de efecto que se ejecuta cuando el usuario está autenticado
     useEffect(() => {
@@ -58,7 +57,7 @@ export default function Login() {
             UserDAO.createUser(newUser); // Creamos un nuevo usuario en la base de datos con estos datos
             navigate("/login"); // Navegamos a la página de login
         }
-    }, [user, navigate]); // Dependencias: el efecto se ejecutará cuando `user` o `navigate` cambien
+    }, [user, navigate]); // Dependencias: el efecto se ejecutará cuando user o navigate cambien
 
     // Retornamos el JSX que define la interfaz de usuario del componente
     return (
@@ -131,4 +130,4 @@ export default function Login() {
             </div>
         </>
     );
-}
+}   

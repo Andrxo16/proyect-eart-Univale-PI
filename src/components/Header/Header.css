@@ -27,17 +27,16 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #A6998A;
   color: black;
-  background-color: #8C695D;
-  color: rgb(255, 255, 255);
-  border-radius: 20px; /* Ajusta este valor para mayor o menor redondeo */
-  transition: background-color 0.3s, border-radius 0.3s; /* Animación suave */
 }
 
 /* Estilos para el contenedor del perfil */
 #perfil {
-  margin-left: 60%; /* Empuja el perfil al lado derecho */
+  margin-left: 70%; /* Empuja el perfil al lado derecho */
 }
 
+#nosotros {
+  margin-left: 5%; /* Empuja el perfil al lado derecho */
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -60,8 +59,6 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-  color: rgb(0, 0, 0);
-
 }
 
 /* Mostrar el contenido del menú desplegable al pasar el cursor */

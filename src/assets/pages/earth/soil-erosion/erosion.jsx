@@ -1,43 +1,10 @@
 import Header from "../../../../components/Header/Header";
 import "./erosion.css";
-import Fondo from "./prueba/Fondo";
-
 
 const Erosion = () => {
     return (
         <>
             <Header />
-            <div>
-                <Fondo />
-            </div>
-
-            <div className="erosion-container">
-                <h3 className="tituloSeccion">¿Cómo se produce la erosión del suelo?</h3>
-                <p>La erosión del suelo es un proceso natural, pero en muchos casos acelerado por la actividad humana, que implica la pérdida y desplazamiento de la capa superior del suelo, esencial para la vida vegetal y la agricultura. Es un tema importante en el contexto ambiental, ya que afecta la productividad agrícola, la calidad del agua y la biodiversidad. A continuación te proporcionaré la información relevante y estructurada que necesitas para desarrollar una página web sobre este tema.</p>
-                <div className="home-erosion erosion-wrapper">
-                    {/* Contenedor principal para la erosión */}
-                    <div className="erosion-item">
-                        {/* Sección sobre cómo se produce la erosión */}
-                        <div className="seccion">
-                            <p>Erosión hídrica:</p>El agua de lluvia o de los ríos puede arrastrar las partículas del suelo, especialmente si el terreno está inclinado o no está cubierto por vegetación.
-                        </div>
-                    </div>
-                    <div className="erosion-item">
-                        {/* Sección sobre cómo se produce la erosión */}
-                        <div className="seccion">
-                            <p>Erosión eólica:</p>El viento puede transportar las partículas del suelo, especialmente en áreas secas y áridas.
-                        </div>
-                    </div>
-                    <div className="erosion-item">
-                        {/* Sección sobre cómo se produce la erosión */}
-                        <div className="seccion">
-                            <p>Erosión por gravedad:</p>La fuerza de la gravedad puede hacer que las partículas del suelo se desprendan de las laderas y se desplacen hacia abajo.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* Sección de conclusión */}
             <div className="home-erosion">
                 <div className="erosion-container">
                     <div className="seccion">
