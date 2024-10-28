@@ -9,6 +9,10 @@ import RecyCling from "./assets/pages/recycling/Recycling.jsx";
 import Page404 from "./assets/pages/page-404/Page404.jsx";
 import Erosion from "./assets/pages/earth/soil-erosion/erosion.jsx";
 import Map from "./assets/pages/map/map.jsx";
+<<<<<<< Updated upstream
+=======
+import Background from "./assets/pages/earth/soil-erosion/prueba/Fondo.jsx";
+>>>>>>> Stashed changes
 
 const router = createBrowserRouter([
   { path: "/", element: <Navigate to="/login" replace /> },

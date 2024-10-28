@@ -1,0 +1,14 @@
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.welcome-text {
+    font-family: 'Arial, sans-serif';
+    font-size: 60px;
+    fill: #ffffff; /* La letra será oscura por defecto */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.603);
+    
+}

@@ -138,7 +138,7 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    padding: 0 15px;
+    padding: auto 15px 15px auto;
     width: 250px;
     height: 40px;
     border-radius: 5px;
@@ -147,11 +147,12 @@
     box-shadow: 4px 4px #202020;
     font-size: 16px;
     font-weight: 600;
-    color: #323232;
+    color: var(--font-color);
     cursor: pointer;
     transition: all 250ms;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 .oauthButton::before {
     content: "";
