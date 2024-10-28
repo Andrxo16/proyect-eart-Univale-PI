@@ -45,8 +45,6 @@ const Header = () => {
                 </div>
               </li>
             </div>
-<<<<<<< Updated upstream
-=======
 
             <div id="nosotros">
               <li className="dropdown">
@@ -54,8 +52,6 @@ const Header = () => {
               </li>
             </div>
 
-            
->>>>>>> Stashed changes
           </ul>
         </nav>
       </header>

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Fondo.css';
 import Header from '../../../../../components/Header/Header';
 
-const Background = () => {
+const Fondo = () => {
     useEffect(() => {
         const svgNode = document.querySelector('svg');
         const fePointLightNode = svgNode.querySelector('fePointLight');
@@ -59,4 +59,4 @@ const Background = () => {
     );
 };
 
-export default Background;
+export default Fondo;

@@ -1,5 +1,5 @@
 nav {
-  background-color: #D9D9D9;
+  background-color: #A6998A;
   overflow: hidden;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -25,29 +25,25 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-<<<<<<< Updated upstream
   background-color: #A6998A;
   color: black;
-=======
   background-color: #8C695D;
   color: rgb(255, 255, 255);
   border-radius: 20px; /* Ajusta este valor para mayor o menor redondeo */
   transition: background-color 0.3s, border-radius 0.3s; /* Animación suave */
-
-  
->>>>>>> Stashed changes
 }
 
 /* Estilos para el contenedor del perfil */
 #perfil {
-  margin-left: 70%; /* Empuja el perfil al lado derecho */
+  margin-left: 60%; /* Empuja el perfil al lado derecho */
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffffff00;
+  background-color: #ffffff;
   min-width: 160px;
+
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.144);
   z-index: 1;
   border-radius: 20px; /* Ajusta este valor para mayor o menor redondeo */
@@ -64,11 +60,8 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-<<<<<<< Updated upstream
-=======
   color: rgb(0, 0, 0);
-  
->>>>>>> Stashed changes
+
 }
 
 /* Mostrar el contenido del menú desplegable al pasar el cursor */
