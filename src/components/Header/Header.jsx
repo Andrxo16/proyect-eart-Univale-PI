@@ -30,9 +30,6 @@ const Header = () => {
             <li>
               <Link to="/Background">prueba</Link>
             </li>
-
-
-
             <div id="perfil">
               <li className="dropdown">
                 <Link to="#profile" className="dropbtn">Perfil</Link>
@@ -42,6 +39,14 @@ const Header = () => {
                 </div>
               </li>
             </div>
+
+            <div id="nosotros">
+              <li className="dropdown">
+                <Link to="#profile" className="dropbtn">nosotros</Link>
+              </li>
+            </div>
+
+            
           </ul>
         </nav>
       </header>

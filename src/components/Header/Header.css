@@ -31,9 +31,12 @@ nav ul li a:hover {
 
 /* Estilos para el contenedor del perfil */
 #perfil {
-  margin-left: 60%; /* Empuja el perfil al lado derecho */
+  margin-left: 50%; /* Empuja el perfil al lado derecho */
 }
 
+#nosotros {
+  margin-left: 5%; /* Empuja el perfil al lado derecho */
+}
 .dropdown-content {
   display: none;
   position: absolute;
