@@ -12,7 +12,7 @@ import Map from "./assets/pages/map/map.jsx";
 import Background from "./assets/pages/earth/soil-erosion/prueba/Background.jsx";
 
 const router = createBrowserRouter([
-  { path: "/", element: <Navigate to="/login" replace /> },
+  { path: "/", element: <Navigate to="/Background" replace /> },
   { path: "/login",element: <Login />,},
   { path: "/Quiz", element: <Quiz />,},
   { path: "/home", element: <Home /> },
