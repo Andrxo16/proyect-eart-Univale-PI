@@ -12,7 +12,6 @@ const Erosion = () => {
 
             <div className="erosion-container">
                 <h3 className="tituloSeccion">¿Cómo se produce la erosión del suelo?</h3>
-                <p>La erosión del suelo es un proceso natural, pero en muchos casos acelerado por la actividad humana, que implica la pérdida y desplazamiento de la capa superior del suelo, esencial para la vida vegetal y la agricultura. Es un tema importante en el contexto ambiental, ya que afecta la productividad agrícola, la calidad del agua y la biodiversidad. A continuación te proporcionaré la información relevante y estructurada que necesitas para desarrollar una página web sobre este tema.</p>
                 <div className="home-erosion erosion-wrapper">
                     {/* Contenedor principal para la erosión */}
                     <div className="erosion-item">
