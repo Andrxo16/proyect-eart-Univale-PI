@@ -1,4 +1,4 @@
-.home-erosion {
+.erosion-content {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -7,7 +7,7 @@
     /* Color de fondo suave */
 }
 
-.erosion-item {
+.erosion-card {
     flex: 1;
     min-width: 250px;
     /* Ancho mínimo para cada contenedor */
@@ -25,12 +25,12 @@
 }
 
 /* Estilos para las secciones */
-.seccion {
+.info-section {
     margin-bottom: 20px;
     /* Espaciado entre secciones */
 }
 
-.tituloSeccion {
+.section-title {
     font-size: 1.5em;
     /* Tamaño de fuente más grande */
     margin-bottom: 10px;
@@ -39,13 +39,13 @@
     /* Color de texto oscuro */
 }
 
-.elementoLista {
+.list-item {
     margin: 5px 0;
     /* Espaciado entre elementos de la lista */
 }
 
 /* Estilos para la conclusión */
-.conclusion {
+.summary {
     margin-top: 20px;
     /* Espaciado arriba de la conclusión */
     font-weight: bold;
@@ -55,13 +55,13 @@
 }
 
 /* Estilos para las burbujas de fondo */
-.background {
+.background-effects {
     position: relative;
     overflow: hidden;
     /* Ocultar burbujas fuera del contenedor */
 }
 
-.bubbles {
+.floating-bubbles {
     position: absolute;
     bottom: 0;
     /* Alinear burbujas al fondo */
@@ -71,18 +71,18 @@
     /* No interactuar con las burbujas */
 }
 
-.bubble {
+.bubble-animation {
     position: absolute;
     bottom: -100px;
     /* Iniciar fuera de la vista */
     background: rgba(255, 255, 255, 0.7);
     /* Color de burbuja */
     border-radius: 50%;
-    animation: bubble 15s infinite;
+    animation: bubbleMovement 15s infinite;
     /* Animación de burbujas */
 }
 
-@keyframes bubble {
+@keyframes bubbleMovement {
     0% {
         transform: translateX(0) scale(1);
     }
