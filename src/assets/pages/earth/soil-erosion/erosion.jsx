@@ -1,6 +1,6 @@
 import Header from "../../../../components/Header/Header";
 import "./erosion.css";
-import Background from "./prueba/Background";
+import Background from "./prueba/Fondo";
 
 const Erosion = () => {
     return (

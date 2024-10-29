@@ -34,10 +34,6 @@ const Header = () => {
             <li>
               <Link to="/quiz">Quiz</Link>
             </li>
-
-            <li>
-              <Link to="/Background">prueba</Link>
-            </li>
             <div id="perfil">
               <li className="dropdown">
                 <Link to="#profile" className="dropbtn">Perfil</Link>

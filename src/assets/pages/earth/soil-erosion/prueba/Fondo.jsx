@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import './Background.css';
-import Header from '../../../../../components/Header/Header';
+import './Fondo.css';
 
-const Background = () => {
+const Fondo = () => {
     useEffect(() => {
         const svgNode = document.querySelector('svg');
         const fePointLightNode = svgNode.querySelector('fePointLight');
@@ -59,4 +58,4 @@ const Background = () => {
     );
 };
 
-export default Background;
+export default Fondo;
