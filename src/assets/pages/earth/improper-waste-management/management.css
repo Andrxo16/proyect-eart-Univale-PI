@@ -88,3 +88,8 @@
         transform: translateY(0); /* Termina en su posición original */
     }
 }
+
+.container-3d-tierra {
+    flex: 1;
+    height: 200px;
+}
