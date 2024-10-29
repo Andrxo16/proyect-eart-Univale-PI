@@ -1,7 +1,7 @@
 import Header from "../../../../components/Header/Header";
 import "./deforestation.css";
 import Earth3d from "./modelo3D/earth_holograma";
-
+import introductionImage from './image/introduction.jpg';
 
 const Deforestation = () => {
   return (
@@ -24,10 +24,12 @@ const Deforestation = () => {
              en un área determinada, lo que ocasiona la pérdida del ecosistema forestal. Los bosques, 
              que cubren aproximadamente el 31% de la superficie terrestre del planeta, desempeñan un papel 
              vital en la regulación del clima, el mantenimiento de la biodiversidad y la protección de los suelos.</li>
-
+             <img src={introductionImage} alt="Introducción a la deforestación" style={{ width: '100%', height: 'auto' }} />
         </ul>
+
       </section>
 
+        
         {/* Sección 1 - causas */}
         <section className="section">
         <h2 className="section-title">1. Causas</h2>
