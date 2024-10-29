@@ -27,6 +27,7 @@ const Header = () => {
                 <Link to="/soil-erosion">Erosión</Link>
                 <Link to="/management">Residuos</Link>
                 <Link to="/biodiversity">perdida</Link>
+                <Link to="/deforestation">deforestacion</Link>
               </div>
             </li>
             <li>
