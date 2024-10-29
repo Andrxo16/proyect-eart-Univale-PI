@@ -42,4 +42,12 @@
     padding: 10px;
     border-radius: 8px;
   }
+  ul.sublist {
+    list-style-type: circle; /* Cambia el estilo del subpunto */
+    margin-left: 20px; /* Indenta los subpuntos hacia la derecha */
+  }
+  
+  ul.sublist li {
+    font-size: 0.9em; /* Reduce el tamaño de la fuente si es necesario */
+  }
   
