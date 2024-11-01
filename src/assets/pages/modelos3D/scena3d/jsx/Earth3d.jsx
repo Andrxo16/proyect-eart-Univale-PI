@@ -1,24 +1,20 @@
-import Header from "../../../components/Header/Header"; // Importa el componente Header desde la ruta especificada
-import TrashCan from "./models-3D/TrashCan"; // Importa el componente TrashCan que renderiza un modelo 3D
+
+import Header from "../../../../../components/Header/Header"; // Importa el componente Header desde la ruta especificada
 import { Canvas } from "@react-three/fiber"; // Importa el componente Canvas que sirve como contenedor para renderizar el contenido 3D
 import { OrbitControls, useGLTF } from "@react-three/drei"; // Importa OrbitControls para permitir el control del modelo con el ratón y useGLTF para cargar modelos GLTF
-import "./Recycling.css"; // Importa los estilos para el componente desde Recycling.css
-import City from "../earth/improper-waste-management/modelo3d/escena/City";
-import City3d from "../earth/improper-waste-management/modelo3d/modelo3D/City3d";
+import "../css/Earth3d.css"; // Importa los estilos para el componente desde Recycling.css
+import Tierra3d from "../../models3d/Tierra3d";
 
 // Definición del componente funcional RecyCling
-const RecyCling = () => {
+const Earth3d = () => {
   return (
     <>
-      {/* Renderiza el componente Header en la parte superior */}
-      <Header />
-      
       {/* Contenedor para el modelo 3D con clase 'container-3d' */}
-      <div className="container-3d">
+      <div className="container-3d-tierra">
         {/* Canvas que actúa como el área para renderizar el contenido 3D */}
         <Canvas
           camera={{
-            position: [0, 0, 10], // Posición inicial de la cámara para que el modelo se vea completo
+            position: [0, 0, 2], // Posición inicial de la cámara para que el modelo se vea completo
             fov: 70, // Campo de visión (Field of View) de la cámara, 70 grados
           }}>
           
@@ -34,12 +30,10 @@ const RecyCling = () => {
           <directionalLight position={[10, 10, 10]} intensity={5} />
           
           {/* Renderiza el modelo TrashCan, que contiene el modelo 3D */}
-          <TrashCan />
-          <City3d/>
+          <Tierra3d/>
         </Canvas>
       </div>
     </>
   );
 };
-
-export default RecyCling; // Exporta el componente RecyCling para ser usado en otras partes de la aplicación
+export default Earth3d;

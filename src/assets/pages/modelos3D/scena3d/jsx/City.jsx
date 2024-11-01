@@ -1,9 +1,9 @@
-import Header from "../../../../../../components/Header/Header";
+import Header from "../../../../../components/Header/Header";
 //import "./management.css";
 // import TrashCan from "./models-3D/TrashCan";  Importa el componente TrashCan que renderiza un modelo 3D
 import { Canvas } from "@react-three/fiber"; // Importa el componente Canvas que sirve como contenedor para renderizar el contenido 3D
 import { OrbitControls, useGLTF } from "@react-three/drei"; // Importa OrbitControls para permitir el control del modelo con el ratón y useGLTF para cargar modelos GLTF
-import City3d from "../modelo3D/City3d";
+import City3d from "../../models3d/City3d";
 
 const City = () => {
     return (

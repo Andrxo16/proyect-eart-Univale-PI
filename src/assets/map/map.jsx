@@ -1,4 +1,4 @@
-import Header from "../../../components/Header/Header"; // Importa el componente Header de la ruta especificada
+import Header from "../../components/Header/Header"; // Importa el componente Header de la ruta especificada
 import "./map.css"; // Importa el archivo de estilos CSS para este componente
 import React, { useEffect, useRef } from 'react'; // Importa React y los hooks useEffect y useRef
 
