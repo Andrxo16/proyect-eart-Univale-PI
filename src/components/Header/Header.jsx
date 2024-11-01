@@ -1,8 +1,16 @@
 import "./Header.css"; // Importa los estilos del archivo Header.css
 import { Link } from "react-router-dom"; // Importa el componente Link de react-router-dom para la navegación
+import useAuthStore from "../.././stores/use-auth-store";
 
 // Definición del componente Header como una función de React
 const Header = () => {
+  const { logout } = useAuthStore(); // Accede a la función logout desde el store
+
+  const handleLogout = () => {
+    logout(); // Llama a la función logout cuando se haga clic en "Cerrar sesión"
+  };
+
+
   return (
     // Contenedor principal con la clase "header"
     <div className="header">
@@ -18,6 +26,8 @@ const Header = () => {
               <div className="dropdown-content">
                 <Link to="/soil-erosion">Erosión</Link>
                 <Link to="/management">Residuos</Link>
+                <Link to="/biodiversity">perdida</Link>
+                <Link to="/deforestation">deforestacion</Link>
               </div>
             </li>
             <li>
@@ -26,16 +36,12 @@ const Header = () => {
             <li>
               <Link to="/quiz">Quiz</Link>
             </li>
-
-            <li>
-              <Link to="/Background">prueba</Link>
-            </li>
             <div id="perfil">
               <li className="dropdown">
                 <Link to="#profile" className="dropbtn">Perfil</Link>
                 <div className="dropdown-content">
                   <Link to="/login">Mi perfil</Link>
-                  <Link to="#logout">Cerrar sesión</Link>
+                  <Link to="#logout" onClick={handleLogout}>Cerrar sesión</Link>
                 </div>
               </li>
             </div>

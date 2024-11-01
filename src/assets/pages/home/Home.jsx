@@ -1,6 +1,6 @@
 import Header from "../../../components/Header/Header";
 import "./Home.css";
-import Earth3d from "./modelo3d/Earth3d";
+import Earth3d from "../modelos3D/scena3d/jsx/Earth3d";
 
 const Home = () => {
   return (
